@@ -71,7 +71,11 @@ public class AdminUserController {
 
 //    @GetMapping("/v2/users/{id}")
 //    @GetMapping(value = "/users/{id}", params = "version=2")
+
+//    X-API-VERSION | 2
 //    @GetMapping(value ="/users/{id}", headers="X-API-VERSION=2")
+
+//    Accept | application/vnd.company.appv1+jso
 @GetMapping(value ="/users/{id}", produces="application/vnd.company.appv2+json")
     public MappingJacksonValue retrieveUserV2(@PathVariable int id) {
         User user = service.findOne(id);
