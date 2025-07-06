@@ -28,12 +28,29 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+
+	// 리소스 요청을 했을 때 링크에 사용 가능한 리소스정보를 연결하는 기능
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+	//
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	// Json 으로 표현될 수 있는 리소스를 더 자유롭고 편하게 사용
+	implementation 'org.springframework.data:spring-data-rest-hal-explorer'
+	// Spring 기반의 애플리케이션의 보안을 처리하는 프레임 워크
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	testImplementation 'org.springframework.security:spring-security-test'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	/* swagger + spring boot 2.x */
+//	implementation "io.springfox:springfox-boot-starter:3.0.0"
+//	implementation "io.springfox:springfox-swagger-ui:3.0.0"
+
+	/* swagger + spring boot 3.x */
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9'
 }
 
 tasks.named('test') {

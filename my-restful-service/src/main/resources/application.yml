@@ -6,6 +6,17 @@ spring:
     name: my-restful-service
   messages:
     basename: messages
+#  security:
+#    user:
+#      name: user
+#      password: 1234
+
 logging:
   level:
     org.springframework: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
