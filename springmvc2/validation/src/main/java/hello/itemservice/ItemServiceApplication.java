@@ -1,7 +1,9 @@
 package hello.itemservice;
 
+import hello.itemservice.web.validation.ItemValidator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class ItemServiceApplication {
@@ -11,3 +13,10 @@ public class ItemServiceApplication {
 	}
 
 }
+
+// 모든 컨트롤러에 validator 적용
+//public class ItemServiceApplication implements WebMvcConfigurer {
+//@Override
+//public Validator getValidator(){
+//	return new ItemValidator();
+//}
