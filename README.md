@@ -8,4 +8,5 @@ springmvc2 / 스프링 MVC 2편 - 백엔드 웹 개발 활용 기술 (김영한 
 - message / 메시지, 국제화
 - validation / 검증 - Validation, Bean Validation 
 - login / 로그인 처리 - 쿠키, 세션, 필터, 인터셉터
-- exception / 예외 처리와 오류 페이지
+- exception / 예외 처리와 오류 페이지, API 예외 처리
+- typeconverter / 스프링 타입 컨버터
