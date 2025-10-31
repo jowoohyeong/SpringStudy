@@ -24,6 +24,6 @@ public class MyHandlerExceptionResolver implements HandlerExceptionResolver {
             log.error("resolver ex", e);
         }
 
-        return null;
+        return null;    // 예외가 그대로 넘어감
     }
 }
